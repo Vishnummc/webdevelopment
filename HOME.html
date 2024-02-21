@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BROTOTYPE | BROTHER YOU HAVE NEVER HAD</title>
+    
+    
+    <style>
+        body {
+            background-color: black;
+            background-image: url('https://www.brototype.com/images/bg-main.webp');
+            background-repeat: no-repeat;
+            background-position: top 10px left -30%;
+            background-size: 80%;
+            padding-bottom: 80px;
+            padding-top: 80px;
+            background-position: -85% -10px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .head {
+            background-color: red;
+            font: 16px;
+            padding: 2px 0px;
+            position: fixed;
+            background-position: top;
+            text-align: center;
+            color: white;
+            height: 25px;
+            align-items: center;
+            width: 100%;
+            top: 0;
+            left: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1rem;
+        }
+
+        .head a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* .navbar {
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.); /* Adjust as needed */
+         */
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            vertical-align: middle;
+            border-style: none;
+            top: 25px;
+            position: absolute;
+        }
+
+        li a {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background: none;
+            font-size: 16px;
+            color: #f2f2f2;
+            cursor: pointer;
+            appearance: none;
+            text-transform: none;
+            margin: 0;
+            font-family: inherit;
+        }
+
+        button {
+            position: fixed;
+            right: 5%;
+            border: 1px solid;
+            background-color: red;
+            color: black;
+            font-size: x-large;
+            font-weight: bolder;
+            border-radius: 18px;
+            z-index: 999; /* Ensure it's on top */
+        }
+
+        .wrap {
+            right: 30px;
+            top: 25px;
+            position: absolute;
+        }
+
+        .menu {
+            width: 20px;
+            height: 2px; /* Adjusted for visibility */
+            background-color: white;
+            margin: 4px 0; /* Adjusted for spacing */
+        }
+
+        .mal {
+            right: 300px;
+            top: 25px;
+            position: absolute;
+        }
+
+        .btn {
+            right: 50px;
+            top: 25px;
+            position: absolute;
+        }
+
+        .want {
+            right: 110px;
+            top: 110px;
+            position: absolute;
+            color: white;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .para {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        select {
+            background: transparent;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+       
+        .b1{
+            position: relative;
+            left: 40%;
+            bottom:-390px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: white;
+            border: 0.5px solid rgba(255, 255, 255, 0.19);
+            border-radius: 28px;
+            box-shadow: 0px 3px 6px #0000001a;
+            background: rgba(255, 255, 255, 0.19);
+            padding: 1rem 0.2rem 1rem 1rem;
+            width: 370px;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+            
+        }
+        .b2{
+            position: relative;
+            left: 40%;
+            width: 350px;
+            bottom:-390px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: white;
+            border: 0.5px solid rgba(255, 255, 255, 0.19);
+            border-radius: 28px;
+            box-shadow: 0px 3px 6px #0000001a;
+            background: rgba(255, 255, 255, 0.19);
+            padding: 1rem 0.2rem 1rem 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .b3{
+            position: relative;
+            left: 48%;
+            bottom:-465px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: white;
+            border: 0.5px solid rgba(255, 255, 255, 0.19);
+            border-radius: 28px;
+            box-shadow: 0px 3px 6px #0000001a;
+            padding: 1rem 0.2rem 1rem 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            font: bolder;
+            width: 510px;
+            /* align-items: center; */
+        
+            
+
+        }
+        .pla{
+            color: white;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            position: relative;
+            bottom:-60px;
+            text-align: center;
+
+        }
+
+        .radiogrid{
+            position: relative;
+            left: 40%;
+            bottom:-390px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            width: 50%;
+            color: white;
+
+        }
+        .radio-container{
+            border-radius: 1%;
+            position: relative;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: white;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(9.9px);
+            border-radius: 28px;
+            padding: 1rem;
+            padding-left: 48px;
+            /* width: 200px; */
+        }
+            .active, .b3:hover {
+            background-color:rgb(230, 22, 22);
+            }
+            .active,.radiogrid:hover{
+                border-color: rgb(228, 221, 221);
+            }
+        
+    </style>
+</head>
+<body>
+<div>
+    <header class="head"><a href="https://brototype.com/hire-from-us/?_gl=1*1tjxmqt*_ga*MTA0MTcxNDg1MC4xNzA3OTMzMzEy*_ga_0203WL6L9M*MTcwODI4MzQxMi4xMy4xLjE3MDgyODYxNzkuMC4wLjA.">Hire from Us!</a></header>
+</div>
+<nav class="navbar">
+    <div class="navdiv">
+        <div class="logo"> <a href="#"><img src="https://www.brototype.com/icons/header.webp" alt="logo" width="140" height="35"></a></div>
+        <div class="mal">
+            <select name="dog-names" id="dog-names">
+                <option value="Malayalam">Malayalam</option>
+                <option value="dave">Tamil</option>
+                <option value="pumpernickel">Hindi</option>
+                <option value="reeses">Kannada</option>
+            </select>
+        </div>
+        <div class="btn"><button>About Brocamp</button></div>
+    </div>
+</nav>
+<div class="wrap">
+    <div class="menu"></div>
+    <div class="menu"></div>
+    <div class="menu"></div>
+</div>
+<div class="want"><h1>Want to become a  <br>Software Engineer?</h1>
+    <div class="para"><p>If you know how to read and write in English and have the basic knowledge to do addition,<br> subtraction, multiplication and division; congratulations you too can become a software<br> engineer</p></div>
+
+    <h5><b>What's your background?</b></h5>
+   <div> <p class="pla">370 students with IT background have already placed from Brocamp</p></div>
+</div>
+<div class="buttons">
+
+    <div class="radiogrid">
+
+        <div class="radio-container ">
+            <input type="radio" name="radio-group" value="370" id="radio_1" onchange="careerPathChange(this,'tech');">
+            <label class="w-100" for="radio_1">I’m from an IT background</label>
+        </div>
+        <!-- division -->
+        <div class="radio-container ">
+            <input type="radio" name="radio-group" value="863" id="radio_2" onchange="careerPathChange(this,'nonTech'); style">
+            <label class="col-12" for="radio_2">I’m from non IT background</label>
+        </div>
+    </div>
+<!-- <button class="b1">I'm from IT background</button>
+
+<button class="b2">I'm form non IT background</button> -->
+
+<button class="b3"> <b>Show me a career path</b></button></div>
+<div class="image"><img src="assets/phone.png.png" alt="Paris" style="width:60px;height: 50px;position:absolute; left: 91%;
+    bottom: -420px; ;"></div>
+
+</body>
+</html>
